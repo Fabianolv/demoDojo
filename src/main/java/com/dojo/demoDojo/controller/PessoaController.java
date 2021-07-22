@@ -41,10 +41,9 @@ public class PessoaController {
         return ResponseEntity.ok().build();
     }
 
-    @PutMapping("/pessoas")
+    @PutMapping("/pessoas/{id}")
     public ResponseEntity<String> alterarPessoa(@RequestBody Pessoa pessoa) {
-        // Codigo que altera Pessoa
-
+        Pessoa novaPessoa = pessoa;
         return ResponseEntity.ok().build();
     }
 
